@@ -1,135 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bethe Portfolio</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <div class="nav-links">
-                    <ul class="nav-content">
-                        <li> <a href="#home" class="active">HOME</a></li>
-                        <li> <a href="#about">ABOUT</a></li>
-                        <li> <a href="#skill">SKILL</a></li>
-                        <li> <a href="#project">PROJECT</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section class="hero" id="home">
-            <div class="hero-container">
-                <h1 class="hero-title">Hey, I’m Bethe</h1>
-                <p class="hero-subtitle">A Software Engineering student crafting bold ideas with clean code and chaotioc creativity. I turn pixels and logic into prodcuts.  let’s build something unforgettable.</p>
-                <div class="hero-cta">
-                    <button type="submit" class="cta bold" onclick="location.href='#project'">See My Work</button>
-                    <button type="submit" class="cta hollow" onclick="location.href='#footer'">Get in touch</button>
-                </div>
-            </div>
-        <div class="dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="about-container">
-                <img src="./assets/20240822_200033.jpg" alt="image of bethe" height="300px" class="img">
-                <div class="about-text">
-                    <h2 class="about-title">About me</h2>
-                    <p class="about-subtitle">
-                        I’m Bethe, a software engineering student at CTBE, and a 
-                        self-taught graphic designer with over 5 years of experi
-                        ence.Right now, I’m Blending creativity logic designing, coding, 
-                        and learning everything from OOP and AI. I believe good soft
-                        ware solves problems, and great software inspires people.
-                        When I’m not debugging or designing, I’m probably watching 
-                        football.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="skill" id="skill">
-            <div class="skill-container">
-                <h2 class="skill-title">Skills</h2>
-                <div class="skill-hollow">
-                        <p class="hollow">HTML</p>
-                        <p class="hollow">CSS</p>
-                        <p class="hollow">C++</p>
-                        <p class="hollow">JAVA</p>
-                        <p class="hollow">PYTHON</p>
-                        <p class="hollow">PHOTOSHOP</p>
-                        <p class="hollow">ILLUSTRATOR</p>
-                        <p class="hollow">FIGMA</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="project" id="project">
-            <div class="project-text">
-                <h2 class="project-title">Projects</h2>
-                <p class="project-subtitle"> I believe good software solves problems, and great software inspires people.</p>
-            </div>
-            <div class="project-container">
-                <div class="card">
-                    <div class="card-background">
-                        <img src="./assets/KECH brand -08.jpg" alt="">
-                    </div>
-                    <h2 class="card-title">Kech <span>Delivery</span></h2>
-                    <div class="project-card">
-                        <p class="card-subtitle">
-Kech is your futuristic, lightning-fast delivery service built for Ethiopia. From local eats to essentials, we've got you covered.
-                        </p>
-                        <button type="submit" class="cta hollow">Comming soon</button>
-                    </div>
-                    
-                </div>
-                                <div class="card">
-                    <div class="card-background">
-                        <img src="./assets/Screenshot 2025-01-13 172915.png" alt="">
-                    </div>
-                    <h2 class="card-title">Game <span>of Quotes</span></h2>
-                    <div class="project-card">
-                        <p class="card-subtitle">
-Inspired by the political chessboard of Westeros, Game of Quotes turns power and glory into a turn-based mind game. Because in this world.                        </p>
-                        <button type="submit" class="cta hollow">Live-Preview</button>
-                    </div>
-                </div>
-                                <div class="card">
-                    <div class="card-background">
-                        <img src="./assets/4b5f93c81977960fc75c47cccd09bd7e.jpg" alt="">
-                    </div>
-                    <h2 class="card-title">RoomRite</span></h2>
-                    <div class="project-card">
-                        <p class="card-subtitle">
-A smart roommate and rental matchmaking platform that makes finding the right room or roommate easy, safe, and hella convenient.                        </p>
-                        <button type="submit" class="cta hollow">Comming soon</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
- <footer class="footer" id="footer">
-        <div class="social">
-            <ul>
-                <li><a href="https://instagram.com/bethe.19">Q</a></li>
-                <li><a href="https://www.facebook.com/bethe19">E</a></li>
-                <li><a href="https://t.me/bethe19">(</a></li>
-                <li><a href="https://www.linkedin.com/in/bethe-bayou">C</a></li>
-                <li><a href="https://github.com/bethe19">)</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bethe Bayou - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Bethe Bayou</div>
+    
+    <div class="nav-right">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <p>Let’s Build Something Together<br>
-            Made by Bethe © 2025 All rights reserved </p>
+        </nav>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <div class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
         </div>
-    </footer>
+    </div>
+</header>
+
+
+
+    <section class="hero">
+        <div class="hero-card">
+            <img src="assets/20240822_200310.jpg" alt="Bethe Bayou" class="profile-img">
+            <div class="hero-text">
+                <h1>Hi, I'm Bethe Bayou</h1>
+                <p>I’m Bethe, a Software Engineering student at AAiT building a strong foundation in programming, algorithms, and problem-solving. My current focus is on Java, C++, and the fundamentals of AI, while also developing a good sense of UI/UX design to create software that’s not only functional but also intuitive to use.
+
+I enjoy working on projects that push me to connect theory with real-world application, from learning data structures to experimenting with practical software solutions. For me, this journey is about mastering the basics, growing step by step, and building the skills to create impactful technology.</p>
+                <div class="buttons">
+                    <button>See More</button>
+                    <button>Resume</button>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/bethe19" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/bethe19" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/251920420134 target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/bethe-bayou" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://t.me/bethe19" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+<section id="skills" class="skills-section">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <i class="fas fa-code"></i>
+      <span>C++</span>
+    </div>
+    <div class="skill-item">
+      <i class="fab fa-java"></i>
+      <span>Java</span>
+    </div>
+    <div class="skill-item">
+      <i class="fab fa-python"></i>
+      <span>Python</span>
+    </div>
+    <div class="skill-item">
+      <i class="fab fa-js"></i>
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-item">
+      <i class="fas fa-database"></i>
+      <span>SQL</span>
+    </div>
+    <div class="skill-item">
+      <i class="fab fa-html5"></i>
+      <span>HTML</span>
+    </div>
+    <div class="skill-item">
+      <i class="fab fa-css3-alt"></i>
+      <span>CSS</span>
+    </div>
+    <div class="skill-item">
+      <i class="fab fa-figma"></i>
+      <span>Figma</span>
+    </div>
+  </div>
+</section>
+
+
+    <section id="projects" class="projects">
+        <h2>PROJECTS</h2>
         
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/Screenshot 2025-09-08 231345.png" alt="Movie Discovery">
+                <h3>Moodie - Mood based Movie Discovery Web App</h3>
+                <p>Built with HTML, CSS, and JavaScript, integrated with the TMDB API. Features real-time movie search and interactive card hover animations.</p>
+                <div class="project-buttons">
+                    <button onclick="window.open('https://github.com/bethe19/moodie-movie-site', '_blank')">
+                        <i class="fab fa-github"></i>
+                    </button>
+                    <button onclick="window.open('https://moodie-neon.vercel.app', '_blank')">
+                        <i class="fas fa-external-link-alt"></i> Live Preview
+                    </button>
+
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/KECH brand -08.jpg" alt="Kech Delivery">
+                <h3>Kech Delivery App (UI/UX Design)</h3>
+                <p>Imaginary delivery brand app (“Kech” means arriving fast in Amharic). Designed first four UI pages, focusing on intuitive user flow and visual branding.</p>
+                <div class="project-buttons">
+                    <button><i class="fab fa-github"></i></button>
+                    <button><i class="fas fa-external-link-alt"></i> Live Preview</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/1.webp" alt="ScoutAI">
+                <h3>ScoutAI – Football Talent Analysis (In Progress)</h3>
+                <p>Custom AI project concept to analyze football talent. Aimed at building a mid-level AI model for practical scouting applications.</p>
+                <div class="project-buttons">
+                    <button><i class="fab fa-github"></i></button>
+                    <button><i class="fas fa-external-link-alt"></i> Live Preview</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education">
+        <h2>EDUCATION</h2>
+        <div class="binder-card">
+            <h3>Addis Ababa Institute of Technology (AAiT)B.Sc. in Software Engineering</h3>
+            <p>Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Development, Object-Oriented Programming, Software Engineering Principles</p>
+            <p>Expected Graduation: 2028</p>
+        </div>
+    </section>
+
+<section class="experience">
+    <h2>EXPERIENCE</h2>
+    <div class="binder-card">
+        <h3>Open Source Contributor – Moodie Movie Site</h3>
+        <p><strong>Role:</strong> Frontend Developer</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Vercel</p>
+        <p><strong>Project:</strong> <a href="https://github.com/bethe19/moodie-movie-site" target="_blank">Moodie Movie Site</a></p>
+        <p><strong>Description:</strong> Developed interactive UI components, integrated APIs, optimized responsiveness, and deployed the project live on <a href="https://moodie-neon.vercel.app" target="_blank">Vercel</a>.</p>
+    </div>
+</section>
 
 
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/myzdlrgo" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>&copy; 2025 Bethe Bayou. All rights reserved.</p>
+    </footer>
 
-    </body>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+</body>
 </html>
