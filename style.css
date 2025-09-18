@@ -383,6 +383,9 @@ footer p a{
 a{
     text-decoration: none;
 }
+footer input, footer textarea{
+    font-family: 'Space Grotesk', sans-serif;
+}
 /* ================================
    Responsive
 ================================ */

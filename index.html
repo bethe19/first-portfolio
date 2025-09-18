@@ -156,20 +156,37 @@ I enjoy working on projects that push me to connect theory with real-world appli
 </section>
 
 
-    <footer id="contact">
-        <h2>Contact Me</h2>
-           <p>Email: <a href="mailto:bethebayou@gmail.com">bethebayou@gmail.com</a> | Phone: <a href="tel:+251920420134">+251920420134</a> <p>Address: Addis Ababa, Ethiopia</p></p>
+<footer id="contact">
+    <h2>Contact Me</h2>
+    <p>
+        Email: <a href="mailto:bethebayou@gmail.com">bethebayou@gmail.com</a>
+        <span onclick="copyToClipboard('bethebayou@gmail.com')" style="cursor: pointer; margin-left: 5px;" title="Copy Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+        </span> 
+        | 
+        Phone: <a href="tel:+251920420134">+251920420134</a>
+        <span onclick="copyToClipboard('+251920420134')" style="cursor: pointer; margin-left: 5px;" title="Copy Phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+        </span>
+    </p>
+    <p>Address: Addis Ababa, Ethiopia</p>
 
-        <form action="mailto:bethebayou@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>&copy; 2025 Bethe Bayou. All rights reserved.</p>
-    </footer>
+    <form action="mailto:bethebayou@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p>&copy; 2025 Bethe Bayou. All rights reserved.</p>
+
+</footer>
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 </body>
 </html>

@@ -62,8 +62,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!savedDarkMode && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         toggleDarkMode();
     }
+    function copyToClipboard(text) {
+        const iconElement = this;
+        const originalIcon = iconElement.innerHTML;
 
-
+        navigator.clipboard.writeText(text).then(() => {
+            iconElement.innerHTML = '<i class="fas fa-check"></i>';
+            setTimeout(() => {
+                iconElement.innerHTML = originalIcon;
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    }
+    window.copyToClipboard = copyToClipboard;
     hamburger.setAttribute('aria-expanded', false);
     hamburger.setAttribute('role', 'button');
     hamburger.setAttribute('tabindex', '0');
