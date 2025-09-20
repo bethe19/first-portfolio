@@ -62,6 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!savedDarkMode && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         toggleDarkMode();
     }
+    const devToggle = document.querySelector('.dev-mode-toggle');
+devToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dev-mode');
+    // Optional: Toggle icon or add feedback
+});
     function copyToClipboard(text) {
         const iconElement = this;
         const originalIcon = iconElement.innerHTML;
