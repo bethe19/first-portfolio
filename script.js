@@ -62,10 +62,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!savedDarkMode && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         toggleDarkMode();
     }
-    const devToggle = document.querySelector('.dev-mode-toggle');
+const devToggle = document.querySelector('.dev-mode-toggle');
+const profileImg = document.querySelector('.profile-img');
+
 devToggle.addEventListener('click', () => {
     document.body.classList.toggle('dev-mode');
-    // Optional: Toggle icon or add feedback
+
+    if (document.body.classList.contains('dev-mode')) {
+        profileImg.src = 'assets/Lord Commander in the Storm.png';
+        profileImg.alt = 'Lord Commander in the Storm';
+    } else {
+        profileImg.src = 'assets/20240822_200310.jpg';
+        profileImg.alt = 'Bethe Bayou';
+    }
 });
     function copyToClipboard(text) {
         const iconElement = this;
